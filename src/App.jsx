@@ -39,7 +39,7 @@ const App = () => {
   };
 
   return (
-    <div className="h-screen bg-black text-white flex flex-col py-7 px-1 justify-between ">
+    <div className="h-screen bg-black text-white flex flex-col pt-7 px-2 justify-between overflow-auto " id="parent">
       <span className="flex flex-row justify-start items-center gap-2 -mt-6 p-2 pl-4">
         <StickyNote size={30} />
         <span className="text-3xl">Notes App</span>
@@ -76,9 +76,9 @@ const App = () => {
           </button>
         </form>
 
-        <div className="flex  flex-col rounded-2xl lg:w-1/2  ">
+        <div className="flex  flex-col rounded-2xl lg:w-1/2 overflow-auto">
           <div
-            className="flex flex-wrap justify-start gap-2 items-center rounded-2xl  pb-4 pl-7"
+            className="flex flex-wrap justify-start gap-2 items-center rounded-2xl overflow-auto pb-6 pl-7 "
             id="note"
           >
             {task.map(function (elem, idx) {
