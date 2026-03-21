@@ -78,7 +78,7 @@ const App = () => {
 
         <div className="flex  flex-col overflow-auto rounded-2xl lg:w-1/2  ">
           <div
-            className="flex flex-wrap justify-start gap-3 items-center rounded-2xl overflow-auto pb-4 pl-7"
+            className="flex flex-wrap justify-start gap-2 items-center rounded-2xl overflow-auto pb-4 pl-7"
             id="note"
           >
             {task.map(function (elem, idx) {
