@@ -85,7 +85,7 @@ const App = () => {
               return (
                 <div
                   key={idx}
-                  className="h-52 w-40  bg-cover overflow-auto py-2 px-2 text-black  " style={{backgroundImage: `url(${Image})`}}
+                  className="h-52 w-40  bg-cover overflow-auto pb-2 py-2 px-2 text-black  " style={{backgroundImage: `url(${Image})`}}
                   id="page"
                 >
                   <p
