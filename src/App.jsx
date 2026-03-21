@@ -85,21 +85,22 @@ const App = () => {
               return (
                 <div
                   key={idx}
-                  className="h-52 w-45 bg-cover overflow-auto text-black " style={{backgroundImage: `url(${Image})`}}
+                  className="h-52 w-44 bg-cover overflow-auto text-black " style={{backgroundImage: `url(${Image})`}}
                   id="page"
                 >
+                  <div className="flex flex-row justify-between p-5">
+                   <h1 className="text-md font-bold leading-tight">
+                    {elem.title}
+                  </h1>
                   <p
                     onClick={() => {
                       deleteNote(idx);
                     }}
-                    className="flex justify-end pt-5 pr-5"
                   >
                     <Trash className="text-red-600" />
                   </p>
-                  <h1 className="text-md font-bold px-3 -mt-6 flex">
-                    {elem.title}
-                  </h1>
-                  <p className="text-sm text-mist-600 px-4 flex">{elem.detail}</p>
+                  </div>
+                  <p className="text-xs -mt-4 text-mist-600 px-4 pr-5 break-words">{elem.detail}</p>
                 </div>
               );
             })}
