@@ -85,7 +85,7 @@ const App = () => {
               return (
                 <div
                   key={idx}
-                  className="h-52 w-40  bg-cover overflow-auto text-black  " style={{backgroundImage: `url(${Image})`}}
+                  className="h-52 w-40  bg-cover overflow-auto py-2 text-black  " style={{backgroundImage: `url(${Image})`}}
                   id="page"
                 >
                   <p
@@ -99,7 +99,7 @@ const App = () => {
                   <h1 className="text-md font-bold px-3 -mt-6 flex">
                     {elem.title}
                   </h1>
-                  <p className="text-sm text-mist-600 px-3 py-2 ">{elem.detail}</p>
+                  <p className="text-sm text-mist-600 px-3  ">{elem.detail}</p>
                 </div>
               );
             })}
