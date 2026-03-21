@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+#note::-webkit-scrollbar{
+    display: none;
+}
+#page::-webkit-scrollbar{
+    display: none;
+}
+
