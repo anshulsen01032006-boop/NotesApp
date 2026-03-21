@@ -39,7 +39,7 @@ const App = () => {
   };
 
   return (
-    <div className="h-screen bg-black text-white flex flex-col py-7 px-2 justify-between ">
+    <div className="h-screen bg-black text-white flex flex-col py-7 px-1 justify-between ">
       <span className="flex flex-row justify-start items-center gap-2 -mt-6 p-2 pl-4">
         <StickyNote size={30} />
         <span className="text-3xl">Notes App</span>
@@ -76,16 +76,16 @@ const App = () => {
           </button>
         </form>
 
-        <div className="flex  flex-col overflow-auto rounded-2xl lg:w-1/2  ">
+        <div className="flex  flex-col rounded-2xl lg:w-1/2  ">
           <div
-            className="flex flex-wrap justify-start  items-center rounded-2xl overflow-auto pb-4 pl-7"
+            className="flex flex-wrap justify-start gap-2 items-center rounded-2xl  pb-4 pl-7"
             id="note"
           >
             {task.map(function (elem, idx) {
               return (
                 <div
                   key={idx}
-                  className="h-52 w-44 bg-cover overflow-auto text-black " style={{backgroundImage: `url(${Image})`}}
+                  className="h-48 w-40 bg-cover overflow-auto text-black " style={{backgroundImage: `url(${Image})`}}
                   id="page"
                 >
                   <div className="flex flex-row justify-between p-5">
@@ -100,7 +100,7 @@ const App = () => {
                     <Trash className="text-red-600" />
                   </p>
                   </div>
-                  <p className="text-xs -mt-4 text-mist-600 px-4 pr-5 break-words">{elem.detail}</p>
+                  <p className="flex-1 overflow-y-auto text-xs h-fit -mt-4 text-mist-600 px-4 pr-5 break-words ">{elem.detail}</p>
                 </div>
               );
             })}
