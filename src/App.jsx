@@ -54,6 +54,7 @@ const App = () => {
           className="flex items-start flex-col gap-5 p-5 lg:w-1/2"
         >
           <input
+          required
             type="text"
             placeholder="Enter Task"
             className="px-5 py-2 w-full border-2 rounded-lg "
@@ -63,6 +64,7 @@ const App = () => {
             }}
           />
           <textarea
+          required
             placeholder="Enter Details"
             className="px-5 py-2 w-full border-2 rounded-lg h-20"
             value={detail}
